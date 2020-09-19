@@ -12,6 +12,7 @@ pytest = "*"
 black = "*"
 mypy = "*"
 flake8 = "*"
+isort = "*"
 
 
 [requires]
