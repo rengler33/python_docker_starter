@@ -10,4 +10,5 @@ services:
       - .:/app
     env_file:
       - ./.envs/.local/.env
-    command: pwd
+    working_dir: /app
+    command: python3 ./project_slug/project_slug.py

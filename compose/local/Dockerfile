@@ -10,6 +10,6 @@ RUN pip install pipenv
 COPY ./requirements /requirements
 
 # Set environment variable to tell pipenv where pipfile is location
-RUN set -e PIPENV_PIPFILE /requirements
-RUN pipenv lock
+WORKDIR /requirements
+RUN pipenv lock --pre
 RUN pipenv install --dev --system
