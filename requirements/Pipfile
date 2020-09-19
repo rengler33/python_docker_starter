@@ -12,7 +12,6 @@ pytest = "*"
 black = "*"
 mypy = "*"
 flake8 = "*"
-pre-commit = "*"
 isort = "*"
 
 
