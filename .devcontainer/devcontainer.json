@@ -2,10 +2,7 @@
   "name": "Dev Container Python Docker Starter",
   // Update the 'dockerComposeFile' list if you have more compose files or use different names.
   // The file in the .devcontainer folder is meant to override a few elements of the original compose file.
-  "dockerComposeFile": [
-    "../local.yml",
-    "docker-compose.yml"
-  ],
+  "dockerComposeFile": ["../local.yml", "docker-compose.yml"],
   // The 'service' property is the name of the service for the container that VS Code should
   // use. Update this value and .devcontainer/docker-compose.yml to the real service name.
   "service": "py",
@@ -17,7 +14,14 @@
     "terminal.integrated.shell.linux": "/bin/bash"
   },
   // Add the IDs of extensions you want installed when the container is created.
-  "extensions": []
+  "extensions": [
+    "dbaeumer.vscode-eslint",
+    "eamodio.gitlens",
+    "esbenp.prettier-vscode",
+    "ms-python.python",
+    "2gua.rainbow-brackets",
+    "visualstudioexptteam.vscodeintellicode"
+  ]
   // Uncomment the next line if you want to keep your containers running after VS Code shuts down.
   // "shutdownAction": "none",
   // Uncomment the next line to use 'postCreateCommand' to run commands after the container is created.
