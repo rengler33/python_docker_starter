@@ -1,35 +1,27 @@
 {
   "name": "Dev Container Python Docker Starter",
-
   // Update the 'dockerComposeFile' list if you have more compose files or use different names.
   // The file in the .devcontainer folder is meant to override a few elements of the original compose file.
   "dockerComposeFile": [
-      "../local.yml",
-      "docker-compose.yml"
-  ]
-
+    "../local.yml",
+    "docker-compose.yml"
+  ],
   // The 'service' property is the name of the service for the container that VS Code should
   // use. Update this value and .devcontainer/docker-compose.yml to the real service name.
   "service": "py",
-
   // The optional 'workspaceFolder' property is the path VS Code should open by default when
   // connected. This is typically a volume mount in .devcontainer/docker-compose.yml
   "workspaceFolder": "/app",
-
   // Set *default* container specific settings.json values on container create.
   "settings": {
     "terminal.integrated.shell.linux": "/bin/bash"
   },
-
   // Add the IDs of extensions you want installed when the container is created.
   "extensions": []
-
   // Uncomment the next line if you want to keep your containers running after VS Code shuts down.
   // "shutdownAction": "none",
-
   // Uncomment the next line to use 'postCreateCommand' to run commands after the container is created.
   // "postCreateCommand": "uname -a",
-
   // Uncomment the next line to connect as a non-root user.
   // "remoteUser": "vscode"
 }
