@@ -8,7 +8,6 @@ ENV PYTHONDONTWRITEBYTECODE 1
 RUN apt-get update && apt-get install -y \
     curl \
     git
-RUN pip install pre-commit
 RUN pip install pipenv 
 
 

@@ -7,11 +7,12 @@ name = "pypi"
 python-dotenv = "*"
 
 [dev-packages]
-pytest = "*"
 black = "*"
-mypy = "*"
 flake8 = "*"
 isort = "*"
+mypy = "*"
+pre-commit = "*"
+pytest = "*"
 
 [requires]
 python_version = "3.8"
