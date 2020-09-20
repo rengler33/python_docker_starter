@@ -11,7 +11,5 @@ services:
     image: project_slug_local
     volumes:
       - .:/app
-    env_file:
-      - ./.envs/.local/.env
     working_dir: /app
     command: python3 ./project_slug/project_slug.py
