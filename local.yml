@@ -14,5 +14,4 @@ services:
     env_file:
       - ./.envs/.local/.env
     working_dir: /app
-    # entrypoint: "./compose/local/startup.sh"
     command: python3 ./project_slug/project_slug.py
