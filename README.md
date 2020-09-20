@@ -8,7 +8,23 @@ This project has a .devcontainer folder which is designed to allow development c
 
 ## Project Setup with container developement
 
-TODO
+### Option A: Use VS Code
+Install "remote development" pack and use remote containers extension to build and enter the container. This will use items inside the `.devcontainer/` folder and install some extensions I find useful.
+
+### Option B: Use terminal
+Spin up the container using an infinite wait command, give it a name of "appy"
+```sh
+ docker-compose -f local.yml run --name appy -d py /bin/sh -c "while sleep 1000; do :; done"
+ ```
+ Enter the container using
+ ```sh
+ docker exec -it appy /bin/bash
+ ```
+ Destroy the container using
+ ```sh
+ docker stop appy
+ docker rm appy
+ ```
 
 ## Project Setup with **no** container development
 
